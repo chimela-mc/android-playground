@@ -1,0 +1,17 @@
+    # Folders and files created by Android Studio and Gradle
+    .gradle/
+    .idea/
+    build/
+    */build/
+    */.gradle/# IDE files
+    *.iml
+    */*.iml
+
+    # Local properties file (contains SDK path and other private info)
+    local.properties
+    */local.properties
+
+    # Other
+    captures/
+    .DS_Store
+
