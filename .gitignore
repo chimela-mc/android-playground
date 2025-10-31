@@ -7,7 +7,7 @@
 
     # IDE files
     *.iml
-    */*.imls
+    */*.iml
 
     # Local properties file (contains SDK path and other private info)
     local.properties
