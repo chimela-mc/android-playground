@@ -3,9 +3,11 @@
     .idea/
     build/
     */build/
-    */.gradle/# IDE files
+    */.gradle/
+
+    # IDE files
     *.iml
-    */*.iml
+    */*.imls
 
     # Local properties file (contains SDK path and other private info)
     local.properties
