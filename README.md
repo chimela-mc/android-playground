@@ -1,2 +1,2 @@
 # android-playground
-using this to write android code to stay sharp
+idk, using this to write kotlin🤷
