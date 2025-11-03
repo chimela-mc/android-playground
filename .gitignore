@@ -10,7 +10,6 @@
     */*.iml
 
     # Local properties file (contains SDK path and other private info)
-    local.properties
     */local.properties
 
     # Other
