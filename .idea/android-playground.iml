@@ -2,7 +2,19 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/GreetingCard/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/GreetingCard/.idea/caches" />
+      <excludeFolder url="file://$MODULE_DIR$/GreetingCard/app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/HappyBirthday/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/HappyBirthday/.idea/caches" />
+      <excludeFolder url="file://$MODULE_DIR$/HappyBirthday/app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/KotlinPlayground/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/KotlinPlayground/.idea/caches" />
+      <excludeFolder url="file://$MODULE_DIR$/KotlinPlayground/app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/LearnTogetherApp/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/LearnTogetherApp/.idea/caches" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
