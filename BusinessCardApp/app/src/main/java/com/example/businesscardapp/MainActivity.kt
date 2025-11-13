@@ -6,13 +6,17 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Call
+import androidx.compose.material.icons.rounded.MailOutline
+import androidx.compose.material.icons.rounded.Share
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -46,79 +50,86 @@ class MainActivity : ComponentActivity() {
 fun Greeting(modifier: Modifier = Modifier) {
     val image = painterResource(R.drawable.android_logo)
     Column(
-        modifier = modifier.fillMaxSize(),
+        modifier = modifier
+            .fillMaxSize()
+            .background(Color(0xFFd2e8d4)),
         verticalArrangement = Arrangement.SpaceAround,
-//        verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Column(
-            modifier = Modifier.border(2.dp, Color.Red),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Image(
                 painter = image,
-                contentDescription = null,
+                contentDescription = "Android Logo",
                 modifier = Modifier
-                    .size(150.dp)
-                    .background(color = Color.Black)
-                    .border(2.dp, Color.Blue)
+                    .size(120.dp)
+                    .background(color = Color(0xFF073042))
             )
 
             Text(
                 text = "Chimela Chimela",
-                modifier = Modifier.border(2.dp, Color.Blue),
+                modifier = Modifier.padding(top = 16.dp),
                 fontSize = 40.sp,
-                //            fontWeight = FontWeight.Bold
+                fontWeight = FontWeight.Light
             )
             Text(
                 text = "Product & Software Developer",
-                modifier = Modifier.border(2.dp, Color.Blue),
-                color = Color(0xFF3ddc84),
-                fontSize = 20.sp,
+                modifier = Modifier.padding(top = 8.dp),
+                color = Color(0xFF006d3b),
+                fontSize = 16.sp,
                 fontWeight = FontWeight.Bold
             )
         }
 
         Column(
-            modifier = Modifier.border(2.dp, Color.Red)
+            verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            Row {
-//                Image(
-//
-//                )
-                Text(
-                    text = "@chimela-mc",
-                    modifier = Modifier.border(2.dp, Color.Blue)
+            Row(
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(
+                    imageVector = Icons.Rounded.Call,
+                    contentDescription = "X",
+                    tint = Color(0xFF006d3b)
                 )
-            }
-            Row {
-//                Image(
-//
-//                )
-                Text(
-                    text = "@chimela-mc",
-                    modifier = Modifier.border(2.dp, Color.Blue)
-                )
-            }
-            Row {
-//                Image(
-//
-//                )
                 Text(
                     text = "@chimela_mc",
-                    modifier = Modifier.border(2.dp, Color.Blue)
+                    modifier = Modifier                        .padding(start = 24.dp)
+                )
+            }
+            Row(
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(
+                    imageVector = Icons.Rounded.Share,
+                    contentDescription = "LinkedIn",
+                    tint = Color(0xFF006d3b)
+                )
+
+
+                Text(
+                    text = "@chimela-mc",
+                    modifier = Modifier.padding(start =24.dp)
+                )
+            }
+            Row(
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(
+                    imageVector = Icons.Rounded.MailOutline,
+                    contentDescription = "GitHub",
+                    tint = Color(0xFF006d3b)
+                )
+                Text(
+                    text = "@chimela-mc",
+                    modifier = Modifier.padding(start = 24.dp)
                 )
             }
         }
     }
 }
-
-//
-//@Composable
-//fun Contact(modifier: Modifier = Modifier){
-//
-//}
 
 @Preview(showBackground = true)
 @Composable
