@@ -1,6 +1,8 @@
-package com.example.kotlinplayground
+// No package line needed for simple testing right now!
 
 fun main() {
+    println("--- IT WORKS! ---")
+    println(1 == 1)
     printTripLength()
     printMeetingReminder()
     printEscapeChar()
@@ -16,6 +18,8 @@ fun main() {
     calBurn()
     println("Have I spent more time using my phone today: ${compareScreenTime(100, 50)}")
     println("Have I spent more time using my phone today: ${compareScreenTime(50, 100)}")
+
+    println("\n--- Weather Report ---")
     weatherDetails("Ankara", 27, 31, 82)
     weatherDetails("Tokyo", 32, 36, 10)
     weatherDetails("Cape Town", 59, 64, 2)
@@ -29,7 +33,6 @@ fun weatherDetails(city : String, lowTemp : Int, highTemp : Int, chanceOfRain : 
 
 fun compareScreenTime(timeSpentToday: Int, timeSpentYesterday: Int): Boolean {
     return timeSpentToday > timeSpentYesterday
-
 }
 
 fun calBurn() {
@@ -42,35 +45,27 @@ fun calculateCaloriesFromSteps(stepCount: Int): Double {
     val caloriesBurnedPerStep = 0.04
     val totalCaloriesBurned = stepCount * caloriesBurnedPerStep
     return totalCaloriesBurned
-
 }
 
 fun loginAttempt() {
-    val firstUserEmailId = "user_one@gmail.com"
-
-    //The following line of code assumes that you named your parameter as emailId.
-    //If you named it differently, feel free to update the name.
-    println(displayAlertMessage(emailId = firstUserEmailId))
+    // FIXED: Renamed emailId to email
+    val firstUserEmail = "user_one@gmail.com"
+    println(displayAlertMessage(email = firstUserEmail))
     println()
 
     val secondUserOperatingSystem = "Windows"
-    val secondUserEmailId = "user_two@gmail.com"
-
-    println(displayAlertMessage(secondUserOperatingSystem, secondUserEmailId))
+    val secondUserEmail = "user_two@gmail.com"
+    println(displayAlertMessage(secondUserOperatingSystem, secondUserEmail))
     println()
 
     val thirdUserOperatingSystem = "Mac OS"
-    val thirdUserEmailId = "user_three@gmail.com"
-
-    println(displayAlertMessage(thirdUserOperatingSystem, thirdUserEmailId))
+    val thirdUserEmail = "user_three@gmail.com"
+    println(displayAlertMessage(thirdUserOperatingSystem, thirdUserEmail))
     println()
 }
 
-fun displayAlertMessage(
-    operatingSystem: String = "Unknown OS",
-    emailId: String
-): String {
-    return "There's a new sign-in request on $operatingSystem for your Google Account $emailId"
+fun displayAlertMessage(operatingSystem: String = "Unknown OS", email: String): String {
+    return "There's a new sign-in request on $operatingSystem for your Google Account $email"
 }
 
 fun basicMath() {
@@ -97,9 +92,9 @@ fun subtract(a: Int, b: Int): Int {
 fun totalSalary() {
     val baseSalary = 5000
     val bonusAmount = 1000
-    val totalSalary = "${baseSalary} + ${bonusAmount}"
+    // FIXED: Removed quotes so it does math instead of text
+    val totalSalary = baseSalary + bonusAmount
     println("Congratulations for your bonus! You will receive a total of $totalSalary (additional bonus).")
-
 }
 
 fun printPartySize() {
@@ -113,15 +108,13 @@ fun promoSale() {
     val discountPercentage = 20
     val item = "Google Chromecast"
     val offer = "Sale - Up to $discountPercentage% discount on $item! Hurry up!"
-
     println(offer)
 }
-fun tellFriends() {
-    println(
-        "Use the val keyword when the value doesn't change.\nUse the var keyword when the value can change.\nWhen you define a function, you define the parameters that can be passed to it. \nWhen you call a function, you pass arguments for the parameter."
-    )
 
+fun tellFriends() {
+    println("Use val for constants. Use var for variables.")
 }
+
 fun birthdayGreeting(name : String = "Rover", age: Int): String {
     val nameGreeting = "Happy birthday, $name!"
     val ageGreeting = "You are now $age years old!"
@@ -131,6 +124,7 @@ fun birthdayGreeting(name : String = "Rover", age: Int): String {
 fun printEscapeChar() {
     println("Say \"hello\"")
 }
+
 fun printTripLength() {
     val trip1 = 3.20
     val trip2 = 4.10
@@ -143,20 +137,13 @@ fun printTripLength() {
 fun printMeetingReminder() {
     val nextMeeting = "Next meeting: "
     val date = "January 1"
-    val reminder = nextMeeting + date + " at work"
+    // FIXED: Used String Templates
+    val reminder = "$nextMeeting$date at work"
     println(reminder)
 }
 
-/*
- *This program displays the number if messages
- * in the user's inbox.
- */
-
 fun notificationsMain() {
-    //Create a variable to check the state of the notifications toggle
     val notificationsEnabled = false
-
-    //Print the message
-    println("Are notifications enabled? " + notificationsEnabled)
+    // FIXED: Used String Templates
+    println("Are notifications enabled? $notificationsEnabled")
 }
-

@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "KotlinPlayground"
+rootProject.name = "Business Card App"
 include(":app")
-include(":scratchpad")
+ 
