@@ -2,7 +2,6 @@
 
 fun main() {
     println("--- IT WORKS! ---")
-    println(1 == 1)
     printTripLength()
     printMeetingReminder()
     printEscapeChar()
@@ -24,8 +23,22 @@ fun main() {
     weatherDetails("Tokyo", 32, 36, 10)
     weatherDetails("Cape Town", 59, 64, 2)
     weatherDetails("Guatemala City", 50, 55, 7)
+    println(1 < 1)
+    println(1 == 1)
+    trafficLightColor()
 }
 
+fun trafficLightColor() {
+    val trafficLightColor = "Black"
+
+    if (trafficLightColor == "Red") {
+        println("Stop")
+    } else if(trafficLightColor == "Yellow") {
+        println("Slow")
+    } else {
+        println("Go")
+    }
+}
 fun weatherDetails(city : String, lowTemp : Int, highTemp : Int, chanceOfRain : Int) {
     println("City: $city\nLow temperature: $lowTemp, High temperature: $highTemp")
     println("Chance of rain: $chanceOfRain%\n")
