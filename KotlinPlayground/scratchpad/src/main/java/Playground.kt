@@ -54,8 +54,6 @@ fun trafficLightColor() {
 
     println(message)
 
-    }
-
 //    if (trafficLightColor == "Red") {
 //        println("Stop")
 //    } else if(trafficLightColor == "Yellow") {
