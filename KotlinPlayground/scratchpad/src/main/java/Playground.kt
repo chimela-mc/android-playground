@@ -27,6 +27,8 @@ fun main() {
     println(1 == 1)
     trafficLightColor()
     complexWhen()
+    trafficLightColor2()
+
 }
 
 fun complexWhen () {
@@ -43,11 +45,15 @@ fun complexWhen () {
 fun trafficLightColor() {
     val trafficLightColor = "Amber"
 
-    when (trafficLightColor) {
-        "Red" -> println("Stop")
-        "Yellow", "Amber" -> println("Slow")
-        "Green" ->  println("Go")
-        else -> println("Invalid traffic-light color")
+    val message = when (trafficLightColor) {
+        "Red" -> "Stop"
+        "Yellow", "Amber" -> "Slow"
+        "Green" -> "Go"
+        else -> "Invalid traffic-light color"
+    }
+
+    println(message)
+
     }
 
 //    if (trafficLightColor == "Red") {
@@ -60,6 +66,20 @@ fun trafficLightColor() {
 //        println("Invalid traffic-light color")
 //    }
 }
+
+fun trafficLightColor2() {
+    val trafficLightColor2 = "Black"
+
+    val message =
+        if (trafficLightColor == "Red") "Stop"
+        else if (trafficLightColor == "Yellow") "Slow"
+        else if (trafficLightColor == "Green") "Go"
+        else "Invalid traffic-light color"
+
+    println(message)
+    }
+}
+
 fun weatherDetails(city : String, lowTemp : Int, highTemp : Int, chanceOfRain : Int) {
     println("City: $city\nLow temperature: $lowTemp, High temperature: $highTemp")
     println("Chance of rain: $chanceOfRain%\n")
