@@ -53,7 +53,6 @@ fun trafficLightColor() {
     }
 
     println(message)
-
 //    if (trafficLightColor == "Red") {
 //        println("Stop")
 //    } else if(trafficLightColor == "Yellow") {
@@ -69,13 +68,12 @@ fun trafficLightColor2() {
     val trafficLightColor2 = "Black"
 
     val message =
-        if (trafficLightColor == "Red") "Stop"
-        else if (trafficLightColor == "Yellow") "Slow"
-        else if (trafficLightColor == "Green") "Go"
+        if (trafficLightColor2 == "Red") "Stop"
+        else if (trafficLightColor2 == "Yellow") "Slow"
+        else if (trafficLightColor2 == "Green") "Go"
         else "Invalid traffic-light color"
 
     println(message)
-    }
 }
 
 fun weatherDetails(city : String, lowTemp : Int, highTemp : Int, chanceOfRain : Int) {
