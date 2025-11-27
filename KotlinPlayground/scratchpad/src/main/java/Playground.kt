@@ -51,7 +51,6 @@ fun trafficLightColor() {
         "Green" -> "Go"
         else -> "Invalid traffic-light color"
     }
-
     println(message)
 //    if (trafficLightColor == "Red") {
 //        println("Stop")
