@@ -28,9 +28,13 @@ fun main() {
     trafficLightColor()
     complexWhen()
     trafficLightColor2()
-
+    nullMain()
 }
 
+fun nullMain() {
+    var favoriteActor: String = "Sandra Oh"
+    favoriteActor = null
+}
 fun complexWhen () {
     val x: Any = 20
 
