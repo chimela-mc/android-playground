@@ -34,6 +34,7 @@ fun main() {
 fun nullMain() {
     var favoriteActor: String? = "Sandra Oh"
     println(favoriteActor)
+    println(favoriteActor?.length)
     favoriteActor = null
     println(favoriteActor)
 
