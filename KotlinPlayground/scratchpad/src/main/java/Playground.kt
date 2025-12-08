@@ -32,8 +32,16 @@ fun main() {
 }
 
 fun nullMain() {
-    var favoriteActor: String = "Sandra Oh"
+    var favoriteActor: String? = "Sandra Oh"
+    println(favoriteActor)
     favoriteActor = null
+    println(favoriteActor)
+
+    var number: Int? = 10
+    println(number)
+
+    number = null
+    println(number)
 }
 fun complexWhen () {
     val x: Any = 20
