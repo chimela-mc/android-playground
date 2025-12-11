@@ -38,13 +38,13 @@ fun nullMain() {
     number = null
     println(number)
 
-    var favoriteActor: String? = null
+    var favoriteActor: String? = "Sandrah Oh"
 //    println(favoriteActor)
 //    println(favoriteActor?.length)
 ////    favoriteActor = null
 //    println(favoriteActor)
 //    println(favoriteActor!!.length)
-    if (favoriteActor != null) {
+    val lengthOfName = if (favoriteActor != null) {
         println("The number of characters in your favorite actor's name is ${favoriteActor.length}.")
     } else {
         println("You didn't input a name.")
