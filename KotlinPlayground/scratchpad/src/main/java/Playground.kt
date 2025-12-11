@@ -38,12 +38,17 @@ fun nullMain() {
     number = null
     println(number)
 
-    var favoriteActor: String? = "null1"
-    println(favoriteActor)
-    println(favoriteActor?.length)
-//    favoriteActor = null
-    println(favoriteActor)
-    println(favoriteActor!!.length)
+    var favoriteActor: String? = "Sandrah 0h"
+//    println(favoriteActor)
+//    println(favoriteActor?.length)
+////    favoriteActor = null
+//    println(favoriteActor)
+//    println(favoriteActor!!.length)
+    if (favoriteActor != null) {
+        println("The number of characters in your favorite actor's name is ${favoriteActor.length}.")
+    } else {
+        println("You didn't input a name.")
+    }
 }
 fun complexWhen () {
     val x: Any = 20
